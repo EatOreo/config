@@ -1,0 +1,54 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+shift+o",
+        "command": "o.restart"
+    },
+    {
+        "key": "shift+cmd+c",
+        "command": "workbench.action.terminal.new"
+    },
+    {
+        "key": "shift+cmd+c",
+        "command": "-workbench.action.terminal.openNativeConsole",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.togglePanel"
+    },
+    {
+        "key": "cmd+j",
+        "command": "-workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.focusSideBar",
+        "when": "!sideBarVisible"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.closeSidebar",
+        "when": "sideBarVisible"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.focusAuxiliaryBar",
+        "when": "!auxiliaryBarVisible"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.closeAuxiliaryBar",
+        "when": "auxiliaryBarVisible"
+    },
+    {
+        "key": "shift+cmd+g",
+        "command": "workbench.view.scm",
+        "when": "workbench.scm.active"
+    },
+    {
+        "key": "ctrl+shift+g",
+        "command": "-workbench.view.scm",
+        "when": "workbench.scm.active"
+    }
+]
