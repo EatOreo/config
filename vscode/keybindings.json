@@ -1,13 +1,4 @@
-// Place your key bindings in this file to override the defaultsauto[]
 [
-    {
-        "key": "ctrl+shift+o",
-        "command": "o.restart"
-    },
-    {
-        "key": "shift+cmd+c",
-        "command": "workbench.action.terminal.new"
-    },
     {
         "key": "shift+cmd+c",
         "command": "-workbench.action.terminal.openNativeConsole",
@@ -50,5 +41,20 @@
         "key": "ctrl+shift+g",
         "command": "-workbench.view.scm",
         "when": "workbench.scm.active"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-extension.vim_ctrl+d",
+        "when": "editorTextFocus && vim.active && vim.use<C-d> && !inDebugRepl"
+    },
+    {
+        "key": "oem_3",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack  && vim.active && vim.mode != 'Insert'"
+    },
+    {
+        "key": "oem_7",
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward && vim.active && vim.mode != 'Insert'"
     }
 ]
