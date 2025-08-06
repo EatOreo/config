@@ -75,11 +75,11 @@
     {
         "key": "ctrl+l",
         "command": "workbench.action.nextPanelView",
-        "when": "panelVisible"
+        "when": "panelVisible && !editorFocus && !sideBarFocus && !auxiliaryBarFocus"
     },
     {
         "key": "ctrl+h",
         "command": "workbench.action.previousPanelView",
-        "when": "panelVisible"
+        "when": "panelVisible && !editorFocus && !sideBarFocus && !auxiliaryBarFocus"
     }
 ]
