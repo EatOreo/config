@@ -1,13 +1,4 @@
-// Place your key bindings in this file to override the defaultsauto[]
 [
-    {
-        "key": "ctrl+shift+o",
-        "command": "o.restart"
-    },
-    {
-        "key": "shift+cmd+c",
-        "command": "workbench.action.terminal.new"
-    },
     {
         "key": "shift+cmd+c",
         "command": "-workbench.action.terminal.openNativeConsole",
@@ -42,13 +33,53 @@
         "when": "auxiliaryBarVisible"
     },
     {
-        "key": "shift+cmd+g",
-        "command": "workbench.view.scm",
-        "when": "workbench.scm.active"
+        "key": "oem_3",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack  && vim.active && vim.mode != 'Insert'"
     },
     {
-        "key": "ctrl+shift+g",
-        "command": "-workbench.view.scm",
-        "when": "workbench.scm.active"
+        "key": "oem_7",
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward && vim.active && vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-extension.vim_ctrl+d",
+        "when": "editorTextFocus && vim.active && vim.use<C-d> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "extension.vim_ctrl+r",
+        "when": "editorTextFocus && vim.active && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-extension.vim_ctrl+r",
+        "when": "editorTextFocus && vim.active && vim.use<C-r> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-extension.vim_ctrl+r",
+        "when": "editorTextFocus && vim.active && vim.use<C-r> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.nextSideBarView",
+        "when": "sideBarFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.previousSideBarView",
+        "when": "sideBarFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.nextPanelView",
+        "when": "panelVisible && !editorFocus && !sideBarFocus && !auxiliaryBarFocus"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.previousPanelView",
+        "when": "panelVisible && !editorFocus && !sideBarFocus && !auxiliaryBarFocus"
     }
 ]
