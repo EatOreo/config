@@ -86,5 +86,15 @@
         "key": "ctrl+j",
         "command": "workbench.action.focusPanel",
         "when": "!panelVisible && !sideBarFocus"
+    },
+    {
+        "key": "[Semicolon]",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack && vim.active && vim.mode != 'Insert'"
+    },
+    {
+        "key": "[Quote]",
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward && vim.active && vim.mode != 'Insert'"
     }
 ]
