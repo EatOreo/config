@@ -96,5 +96,15 @@
         "key": "[Quote]",
         "command": "workbench.action.navigateForward",
         "when": "canNavigateForward && vim.active && vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+[Minus]",
+        "command": "workbench.action.increaseViewSize",
+        "when": "sideBarFocus || auxiliaryBarFocus || panelFocus"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "workbench.action.decreaseViewSize",
+        "when": "auxiliaryBarFocus || panelFocus || sideBarFocus"
     }
 ]
