@@ -5,32 +5,8 @@
         "when": "!terminalFocus"
     },
     {
-        "key": "ctrl+j",
-        "command": "workbench.action.togglePanel"
-    },
-    {
         "key": "cmd+j",
         "command": "-workbench.action.togglePanel"
-    },
-    {
-        "key": "ctrl+h",
-        "command": "workbench.action.focusSideBar",
-        "when": "!sideBarVisible"
-    },
-    {
-        "key": "ctrl+h",
-        "command": "workbench.action.closeSidebar",
-        "when": "sideBarVisible"
-    },
-    {
-        "key": "ctrl+l",
-        "command": "workbench.action.focusAuxiliaryBar",
-        "when": "!auxiliaryBarVisible"
-    },
-    {
-        "key": "ctrl+l",
-        "command": "workbench.action.closeAuxiliaryBar",
-        "when": "auxiliaryBarVisible"
     },
     {
         "key": "oem_3",
@@ -83,11 +59,6 @@
         "when": "panelFocus"
     },
     {
-        "key": "ctrl+j",
-        "command": "workbench.action.focusPanel",
-        "when": "!panelVisible && !sideBarFocus"
-    },
-    {
         "key": "[Semicolon]",
         "command": "workbench.action.navigateBack",
         "when": "canNavigateBack && vim.active && vim.mode != 'Insert'"
@@ -106,5 +77,50 @@
         "key": "ctrl+-",
         "command": "workbench.action.decreaseViewSize",
         "when": "auxiliaryBarFocus || panelFocus || sideBarFocus"
-    }
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.focusSideBar",
+        "when": "!sideBarFocus && !auxiliaryBarFocus && !panelFocus" // "editorFocus" does not work for other windows in the middle than the editor
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.closeSidebar",
+        "when": "sideBarVisible && sideBarFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "sideBarFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.focusAuxiliaryBar",
+        "when": "!sideBarFocus && !auxiliaryBarFocus && !panelFocus" // "editorFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.closeAuxiliaryBar",
+        "when": "auxiliaryBarFocus"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "auxiliaryBarFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.focusPanel",
+        "when": "!sideBarFocus && !panelFocus" // "editorFocus || auxiliaryBarFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.togglePanel",
+        "when": "panelFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "panelFocus"
+    },
 ]
