@@ -9,16 +9,6 @@
         "command": "-workbench.action.togglePanel"
     },
     {
-        "key": "oem_3",
-        "command": "workbench.action.navigateBack",
-        "when": "canNavigateBack  && vim.active && vim.mode != 'Insert'"
-    },
-    {
-        "key": "oem_7",
-        "command": "workbench.action.navigateForward",
-        "when": "canNavigateForward && vim.active && vim.mode != 'Insert'"
-    },
-    {
         "key": "ctrl+d",
         "command": "-extension.vim_ctrl+d",
         "when": "editorTextFocus && vim.active && vim.use<C-d> && !inDebugRepl"
@@ -57,16 +47,6 @@
         "key": "ctrl+h",
         "command": "workbench.action.previousPanelView",
         "when": "panelFocus"
-    },
-    {
-        "key": "[Semicolon]",
-        "command": "workbench.action.navigateBack",
-        "when": "canNavigateBack && vim.active && vim.mode != 'Insert'"
-    },
-    {
-        "key": "[Quote]",
-        "command": "workbench.action.navigateForward",
-        "when": "canNavigateForward && vim.active && vim.mode != 'Insert'"
     },
     {
         "key": "ctrl+[Minus]",
@@ -122,5 +102,5 @@
         "key": "ctrl+k",
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "panelFocus"
-    },
+    }
 ]
