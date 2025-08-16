@@ -9,16 +9,6 @@
         "command": "-workbench.action.togglePanel"
     },
     {
-        "key": "oem_3",
-        "command": "workbench.action.navigateBack",
-        "when": "canNavigateBack  && vim.active && vim.mode != 'Insert'"
-    },
-    {
-        "key": "oem_7",
-        "command": "workbench.action.navigateForward",
-        "when": "canNavigateForward && vim.active && vim.mode != 'Insert'"
-    },
-    {
         "key": "ctrl+d",
         "command": "-extension.vim_ctrl+d",
         "when": "editorTextFocus && vim.active && vim.use<C-d> && !inDebugRepl"
@@ -57,16 +47,6 @@
         "key": "ctrl+h",
         "command": "workbench.action.previousPanelView",
         "when": "panelFocus"
-    },
-    {
-        "key": "[Semicolon]",
-        "command": "workbench.action.navigateBack",
-        "when": "canNavigateBack && vim.active && vim.mode != 'Insert'"
-    },
-    {
-        "key": "[Quote]",
-        "command": "workbench.action.navigateForward",
-        "when": "canNavigateForward && vim.active && vim.mode != 'Insert'"
     },
     {
         "key": "ctrl+[Minus]",
@@ -122,5 +102,89 @@
         "key": "ctrl+k",
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "panelFocus"
+    },
+    {
+        "key": "ctrl+alt+r",
+        "command": "-rest-client.request",
+        "when": "editorTextFocus && editorLangId == 'http'"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus && (terminalProcessSupported || terminalWebExtensionContributedProfile)"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "rest-client.request",
+        "when": "editorTextFocus && editorLangId == 'http'"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "workbench.action.files.newUntitledFile",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "explorer.newFile",
+        "when": "filesExplorerFocus"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.closeActiveEditor",
+        "when": "!sideBarFocus && !auxiliaryBarFocus && !panelFocus"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.closePanel",
+        "when": "view.sqldeveloper.worksheet.queryResult.visible || view.scribble.scribbleView.visible"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "view.sqldeveloper.worksheet.queryResult.visible || view.scribble.scribbleView.visible"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.nextPanelView",
+        "when": "view.sqldeveloper.worksheet.queryResult.visible || view.scribble.scribbleView.visible"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.previousPanelView",
+        "when": "view.sqldeveloper.worksheet.queryResult.visible || view.scribble.scribbleView.visible"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.quickOpenNavigateNext",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.quickOpenNavigatePrevious",
+        "when": "inQuickOpen"
     },
 ]
