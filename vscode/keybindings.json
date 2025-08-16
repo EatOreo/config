@@ -104,11 +104,6 @@
         "when": "panelFocus"
     },
     {
-        "key": "ctrl+alt+r",
-        "command": "-rest-client.request",
-        "when": "editorTextFocus && editorLangId == 'http'"
-    },
-    {
         "key": "ctrl+tab",
         "command": "workbench.action.terminal.focusNext",
         "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
