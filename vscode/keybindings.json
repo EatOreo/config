@@ -104,11 +104,6 @@
         "when": "panelFocus"
     },
     {
-        "key": "ctrl+alt+r",
-        "command": "-rest-client.request",
-        "when": "editorTextFocus && editorLangId == 'http'"
-    },
-    {
         "key": "ctrl+tab",
         "command": "workbench.action.terminal.focusNext",
         "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
@@ -160,22 +155,22 @@
     {
         "key": "ctrl+j",
         "command": "workbench.action.closePanel",
-        "when": "view.sqldeveloper.worksheet.queryResult.visible || view.scribble.scribbleView.visible"
+        "when": "view.sqldeveloper.worksheet.queryResult.visible"
     },
     {
         "key": "ctrl+k",
         "command": "workbench.action.focusActiveEditorGroup",
-        "when": "view.sqldeveloper.worksheet.queryResult.visible || view.scribble.scribbleView.visible"
+        "when": "view.sqldeveloper.worksheet.queryResult.visible"
     },
     {
         "key": "ctrl+l",
         "command": "workbench.action.nextPanelView",
-        "when": "view.sqldeveloper.worksheet.queryResult.visible || view.scribble.scribbleView.visible"
+        "when": "view.sqldeveloper.worksheet.queryResult.visible"
     },
     {
         "key": "ctrl+h",
         "command": "workbench.action.previousPanelView",
-        "when": "view.sqldeveloper.worksheet.queryResult.visible || view.scribble.scribbleView.visible"
+        "when": "view.sqldeveloper.worksheet.queryResult.visible"
     },
     {
         "key": "ctrl+j",
@@ -186,5 +181,14 @@
         "key": "ctrl+k",
         "command": "workbench.action.quickOpenNavigatePrevious",
         "when": "inQuickOpen"
+    },
+    {
+        "key": "n",
+        "command": "quickNotes.toggle",
+        "when": "vim.mode == 'Normal' && editorTextFocus"
+    },
+    {
+        "key": "alt+tab",
+        "command": "-quickNotes.toggle"
     },
 ]
