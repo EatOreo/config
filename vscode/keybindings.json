@@ -191,4 +191,14 @@
         "key": "alt+tab",
         "command": "-quickNotes.toggle"
     },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.focusRightGroup",
+        "when": "!sideBarFocus && !auxiliaryBarFocus && !panelFocus && !activeEditorGroupLast && multipleEditorGroups"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.focusLeftGroup",
+        "when": "!sideBarFocus && !auxiliaryBarFocus && !panelFocus && (activeEditorGroupIndex != 1) && multipleEditorGroups"
+    }
 ]
