@@ -183,11 +183,6 @@
         "when": "inQuickOpen"
     },
     {
-        "key": "n",
-        "command": "quickNotes.toggle",
-        "when": "vim.mode == 'Normal' && editorTextFocus"
-    },
-    {
         "key": "alt+tab",
         "command": "-quickNotes.toggle"
     },
