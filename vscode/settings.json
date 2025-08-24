@@ -32,6 +32,12 @@
             "commands": [
                 "editor.action.revealDefinitionAside"
             ]
-        }
+        },
+        {
+            "before": ["n"],
+            "commands": [
+                "quickNotes.toggle"
+            ]
+        },
     ]
 }
