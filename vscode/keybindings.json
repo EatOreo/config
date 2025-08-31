@@ -195,5 +195,21 @@
         "key": "ctrl+h",
         "command": "workbench.action.focusLeftGroup",
         "when": "!sideBarFocus && !auxiliaryBarFocus && !panelFocus && (activeEditorGroupIndex != 1) && multipleEditorGroups"
+    },
+    {
+        "key": "alt+j",
+        "command": "vim.remap",
+        "when": "editorTextFocus && vim.active && !inDebugRepl",
+        "args": {
+            "after": ["3", "j"]
+        }
+    },
+    {
+        "key": "alt+k",
+        "command": "vim.remap",
+        "when": "editorTextFocus && vim.active && !inDebugRepl",
+        "args": {
+            "after": ["3", "k"]
+        }
     }
 ]
